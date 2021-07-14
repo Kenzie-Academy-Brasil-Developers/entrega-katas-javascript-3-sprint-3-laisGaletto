@@ -6,8 +6,9 @@ function showResults(result, katas) {
     let createThead = document.createElement("thead");
     let createTh = document.createElement("th");
     let text = document.createTextNode(katas);
-    createTh.appendChild(text);
     createThead.appendChild(createTh);
+    createTh.appendChild(text);
+    
     createTable.appendChild(createThead);
     
     destiny[0].appendChild(createTable);
@@ -28,7 +29,8 @@ function kata1() {
         x.push(a);
     }
     let result = x.join(", ");
-    return showResults(result, "kata 1");
+    showResults(result, "kata 1");
+
 }
 
 //Exibir os números de 25 a 1
@@ -165,7 +167,7 @@ function kata13() {
 //Exibir o quadrado de cada elemento de sampleArray
 function kata14() {
     let x = [];
-    for(let i = 0; a< sampleArray.length; a++){
+    for(let a = 0; a< sampleArray.length; a++){
         x.push(sampleArray[a]*sampleArray[a])
     }
     let result = x.join(", ");
