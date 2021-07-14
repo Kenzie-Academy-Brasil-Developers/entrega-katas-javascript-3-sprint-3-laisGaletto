@@ -30,7 +30,7 @@ function kata1() {
     }
     let result = x.join(", ");
     showResults(result, "kata 1");
-
+    return x;
 }
 
 //Exibir os números de 25 a 1
@@ -40,7 +40,8 @@ function kata2() {
         x.push(a);
     }
     let result = x.join(", ");
-    return showResults(result, "katas 2");
+    showResults(result, "katas 2");
+    return x;
 }
 
 //Exibir os números de -1 a -25
@@ -50,7 +51,8 @@ function kata3() {
         x.push(a);
     }
     let result = x.join(", ");
-    return showResults(result, "katas 3");
+    showResults(result, "katas 3");
+    return x;
 }
 
 //Exibir os números de -25 a -1
@@ -60,7 +62,8 @@ function kata4() {
         x.push(a);
     }
     let result = x.join(", ");
-    return showResults(result, "katas 4");
+    showResults(result, "katas 4");
+    return x;
 }
 
 //Exibir os números ímpares de 25 a -25
@@ -72,7 +75,8 @@ function kata5() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 5");
+    showResults(result, "katas 5");
+    return x;
 }
 
 //Exibir os números divisíveis por 3 até o 100
@@ -84,7 +88,8 @@ function kata6() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 6");
+    showResults(result, "katas 6");
+    return x;
 }
 
 //Exibir os números divisíveis por 7 até o 100
@@ -96,7 +101,8 @@ function kata7() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 7");
+    showResults(result, "katas 7");
+    return x;
 }
 
 //Exibir os números divisíveis por 3 e os números divisíveis por 7 regressivamente a partir do 100
@@ -108,7 +114,8 @@ function kata8() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 8");
+    showResults(result, "katas 8");
+    return x;
 }
 
 //Exibir os números ímpares divisíveis por 5 até o 100
@@ -120,12 +127,14 @@ function kata9() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 9");
+    showResults(result, "katas 9");
+    return x;
 }
 
 //Exibir os 20 elementos de sampleArray
 function kata10() {
-    return showResults(sampleArray, "katas 10");
+    showResults(sampleArray, "katas 10");
+    return x;
 }
 
 //Exibir todos os números pares contidos em sampleArray
@@ -137,7 +146,8 @@ function kata11() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 11");
+    showResults(result, "katas 11");
+    return x;
 }
 
 //Exibir todos os números ímpares contidos em sampleArray
@@ -149,7 +159,8 @@ function kata12() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 12");
+    showResults(result, "katas 12");
+    return x;
 }
 
 //Exibir os números divisíveis por 8 em sampleArray
@@ -161,7 +172,8 @@ function kata13() {
         }
     }
     let result = x.join(", ");
-    return showResults(result, "katas 13");
+    showResults(result, "katas 13");
+    return x;
 }
 
 //Exibir o quadrado de cada elemento de sampleArray
@@ -171,7 +183,8 @@ function kata14() {
         x.push(sampleArray[a]*sampleArray[a])
     }
     let result = x.join(", ");
-    return showResults(result, "katas 14");
+    showResults(result, "katas 14");
+    return x;
 }
 
 //Exibir a soma de todos os números de 1 a 20
@@ -180,8 +193,8 @@ function kata15() {
     for(let a = 0; a< 20; a++){
         x += sampleArray[a];
     }
-    let result = x;
-    return showResults(result, "katas 15");
+    showResults(result, "katas 15");
+    return x;
 }
 
  //Exibir a soma de todos os elementos de sampleArray.
@@ -190,8 +203,8 @@ function kata16() {
     for(let a = 0; a< sampleArray.length; a++){
         x += sampleArray[a];
     }
-    let result = x;
-    return showResults(result, "katas 16");
+    showResults(result, "katas 16");
+    return x;
 }
 
 //Exibir o menor elemento de sampleArray
@@ -202,8 +215,8 @@ function kata17() {
             x = sampleArray[a];
         }
     }
-    let result = x;
-    return showResults(result, "katas 17");
+    showResults(result, "katas 17");
+    return x;
 }
 
 //Exibir o maior elemento de sampleArray
@@ -214,8 +227,8 @@ function kata18() {
             x = sampleArray[a];
         }
     }
-    let result = x;
-    return showResults(result, "katas 18");
+    showResults(result, "katas 18");
+    return x;
 }
 
 kata1();
