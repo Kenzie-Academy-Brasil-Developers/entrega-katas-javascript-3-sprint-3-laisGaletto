@@ -1,97 +1,236 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
+function showResults(result, katas) {
+    let destiny = document.getElementsByTagName('body');
+    let createTable = document.createElement("table");
+    let createThead = document.createElement("thead");
+    let createTh = document.createElement("th");
+    let text = document.createTextNode(katas);
+    createTh.appendChild(text);
+    createThead.appendChild(createTh);
+    createTable.appendChild(createThead);
+    
+    destiny[0].appendChild(createTable);
+    let createTbody = document.createElement("tbody");
+    let createTd = document.createElement("td");
+    let texto = document.createTextNode(result);
+    createTd.appendChild(texto);
+    createTbody.appendChild(createTd);
+    createTable.appendChild(createTbody);
+    
+    destiny[0].appendChild(createTable);
+}
+
+//Exibir os números de 1 a 25
 function kata1() {
-    // implemente o código do kata 1 aqui
+    let x = [];
+    for(let a = 1 ; a<=25 ; a++){
+        x.push(a);
+    }
+    let result = x.join(", ");
+    return showResults(result, "kata 1");
 }
 
+//Exibir os números de 25 a 1
 function kata2() {
-    // implemente o código do kata 2 aqui
+    let x = [];
+    for(let a = 25; a>=1; a--){
+        x.push(a);
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 2");
 }
 
+//Exibir os números de -1 a -25
 function kata3() {
-    // implemente o código do kata 3 aqui
+    let x = [];
+    for(let a = -1; a>=-25; a--){
+        x.push(a);
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 3");
 }
 
+//Exibir os números de -25 a -1
 function kata4() {
-    // implemente o código do kata 4 aqui
+    let x = [];
+    for(let a = -25; a<=-1; a++){
+        x.push(a);
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 4");
 }
 
+//Exibir os números ímpares de 25 a -25
 function kata5() {
-    // implemente o código do kata 5 aqui
+    let x = [];
+    for(let a = 25; a>= -25; a--){
+        if (a%2 !== 0){
+            x.push(a)
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 5");
 }
 
+//Exibir os números divisíveis por 3 até o 100
 function kata6() {
-    // implemente o código do kata 6 aqui
+    let x = [];
+    for(let a = 0; a<= 100; a++){
+        if (a%3 === 0){
+            x.push(a)
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 6");
 }
 
+//Exibir os números divisíveis por 7 até o 100
 function kata7() {
-    // implemente o código do kata 7 aqui
+    let x = [];
+    for(let a = 0; a<= 100; a++){
+        if (a%7 === 0){
+            x.push(a)
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 7");
 }
 
+//Exibir os números divisíveis por 3 e os números divisíveis por 7 regressivamente a partir do 100
 function kata8() {
-    // implemente o código do kata 8 aqui
+    let x = [];
+    for(let a = 100; a>= 0; a--){
+        if (a%3 === 0 || a%7 === 0){
+            x.push(a)
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 8");
 }
 
+//Exibir os números ímpares divisíveis por 5 até o 100
 function kata9() {
-    // implemente o código do kata 9 aqui
+    let x = [];
+    for(let a = 0; a<= 100; a++){
+        if (a%5 === 0 && a%2 !== 0){
+            x.push(a)
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 9");
 }
 
+//Exibir os 20 elementos de sampleArray
 function kata10() {
-    // implemente o código do kata 10 aqui
+    return showResults(sampleArray, "katas 10");
 }
 
+//Exibir todos os números pares contidos em sampleArray
 function kata11() {
-    // implemente o código do kata 11 aqui
+    let x = [];
+    for(let a = 0; a< sampleArray.length; a++){
+        if (sampleArray[a]%2 === 0){
+            x.push(sampleArray[a])
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 11");
 }
 
+//Exibir todos os números ímpares contidos em sampleArray
 function kata12() {
-    // implemente o código do kata 12 aqui
+    let x = [];
+    for(let a = 0; a< sampleArray.length; a++){
+        if (sampleArray[a]%2 !== 0){
+            x.push(sampleArray[a])
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 12");
 }
 
+//Exibir os números divisíveis por 8 em sampleArray
 function kata13() {
-    // implemente o código do kata 13 aqui
+    let x = [];
+    for(let a = 0; a< sampleArray.length; a++){
+        if (sampleArray[a]%8 === 0){
+            x.push(sampleArray[a])
+        }
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 13");
 }
 
+//Exibir o quadrado de cada elemento de sampleArray
 function kata14() {
-    // implemente o código do kata 14 aqui
+    let x = [];
+    for(let i = 0; a< sampleArray.length; a++){
+        x.push(sampleArray[a]*sampleArray[a])
+    }
+    let result = x.join(", ");
+    return showResults(result, "katas 14");
 }
 
+//Exibir a soma de todos os números de 1 a 20
 function kata15() {
-    // implemente o código do kata 15 aqui
+    let x = 0;
+    for(let a = 0; a< 20; a++){
+        x += sampleArray[a];
+    }
+    let result = x;
+    return showResults(result, "katas 15");
 }
 
+ //Exibir a soma de todos os elementos de sampleArray.
 function kata16() {
-    // implemente o código do kata 16 aqui
+    let x = 0;
+    for(let a = 0; a< sampleArray.length; a++){
+        x += sampleArray[a];
+    }
+    let result = x;
+    return showResults(result, "katas 16");
 }
 
+//Exibir o menor elemento de sampleArray
 function kata17() {
-    // implemente o código do kata 17 aqui
+    let x = sampleArray[0];
+    for(let a = 0; a< sampleArray.length; a++){
+        if(sampleArray[a] < x){
+            x = sampleArray[a];
+        }
+    }
+    let result = x;
+    return showResults(result, "katas 17");
 }
 
+//Exibir o maior elemento de sampleArray
 function kata18() {
-    // implemente o código do kata 18 aqui
+    let x = sampleArray[0];
+    for(let a = 0; a< sampleArray.length; a++){
+        if(sampleArray[a] > x){
+            x = sampleArray[a];
+        }
+    }
+    let result = x;
+    return showResults(result, "katas 18");
 }
 
-/**
- * Daqui em diante são os bônus, por sua conta e risco
- */
-
-function kataBonus1() {
-    // implemente o código do kata bonus 1 aqui
-}
-
-function kataBonus2() {
-    // implemente o código do kata bonus 2 aqui
-}
-
-function kataBonus3() {
-    // implemente o código do kata bonus 3 aqui
-}
-
-function kataBonus4() {
-    // implemente o código do kata bonus 4 aqui
-}
-
-function kataBonus5() {
-    // implemente o código do kata bonus 5 aqui
-}
+kata1();
+kata2();
+kata3();
+kata4();
+kata5();
+kata6();
+kata7();
+kata8();
+kata9();
+kata10();
+kata11();
+kata12();
+kata13();
+kata14();
+kata15();
+kata16();
+kata17();
+kata18();
