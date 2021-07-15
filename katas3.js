@@ -82,7 +82,7 @@ function kata5() {
 //Exibir os números divisíveis por 3 até o 100
 function kata6() {
     let x = [];
-    for(let a = 0; a<= 100; a++){
+    for(let a = 3; a<= 100; a++){
         if (a%3 === 0){
             x.push(a)
         }
@@ -103,6 +103,7 @@ function kata7() {
     let result = x.join(", ");
     showResults(result, "katas 7");
     return x;
+   
 }
 
 //Exibir os números divisíveis por 3 e os números divisíveis por 7 regressivamente a partir do 100
@@ -116,6 +117,7 @@ function kata8() {
     let result = x.join(", ");
     showResults(result, "katas 8");
     return x;
+    
 }
 
 //Exibir os números ímpares divisíveis por 5 até o 100
@@ -129,12 +131,13 @@ function kata9() {
     let result = x.join(", ");
     showResults(result, "katas 9");
     return x;
+    
 }
 
 //Exibir os 20 elementos de sampleArray
 function kata10() {
     showResults(sampleArray, "katas 10");
-    return x;
+    return sampleArray;
 }
 
 //Exibir todos os números pares contidos em sampleArray
@@ -159,7 +162,7 @@ function kata12() {
         }
     }
     let result = x.join(", ");
-    showResults(result, "katas 12");
+    showResults(x, "katas 12");
     return x;
 }
 
@@ -172,7 +175,7 @@ function kata13() {
         }
     }
     let result = x.join(", ");
-    showResults(result, "katas 13");
+    showResults(x, "katas 13");
     return x;
 }
 
@@ -183,17 +186,17 @@ function kata14() {
         x.push(sampleArray[a]*sampleArray[a])
     }
     let result = x.join(", ");
-    showResults(result, "katas 14");
+    showResults(x, "katas 14");
     return x;
 }
 
 //Exibir a soma de todos os números de 1 a 20
 function kata15() {
     let x = 0;
-    for(let a = 0; a< 20; a++){
-        x += sampleArray[a];
+    for(let a = 0; a< 21; a++){
+        x += sampleArray[a];//atualizar p soma de 1 a 20
     }
-    showResults(result, "katas 15");
+    showResults(x, "katas 15");
     return x;
 }
 
@@ -203,7 +206,7 @@ function kata16() {
     for(let a = 0; a< sampleArray.length; a++){
         x += sampleArray[a];
     }
-    showResults(result, "katas 16");
+    showResults(x, "katas 16");
     return x;
 }
 
@@ -215,7 +218,8 @@ function kata17() {
             x = sampleArray[a];
         }
     }
-    showResults(result, "katas 17");
+    
+    showResults(x, "katas 17");
     return x;
 }
 
@@ -227,7 +231,7 @@ function kata18() {
             x = sampleArray[a];
         }
     }
-    showResults(result, "katas 18");
+    showResults(x, "katas 18");
     return x;
 }
 
