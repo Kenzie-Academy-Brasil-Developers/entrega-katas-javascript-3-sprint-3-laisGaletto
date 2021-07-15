@@ -194,7 +194,7 @@ function kata14() {
 function kata15() {
     let x = 0;
     for(let a = 0; a< 21; a++){
-        x += sampleArray[a];//atualizar p soma de 1 a 20
+        x += a;//atualizar p soma de 1 a 20
     }
     showResults(x, "katas 15");
     return x;
